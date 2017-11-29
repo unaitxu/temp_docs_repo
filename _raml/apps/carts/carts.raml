@@ -1,0 +1,69 @@
+#%RAML 0.8
+displayName: Carts
+post:
+  description: Create a new cart
+  body:
+    application/json:
+      example: !include cart-create-request.json
+  responses:
+    201:
+      body:
+        application/json:
+          example: !include cart-create-response.json
+/{cartId}:
+  delete:
+    description: cart-delete
+  get:
+    description: Get a cart by id
+    responses:      
+      200:
+        body:
+          application/hal+json:
+            schema: !include get_carts_cartid.schema.json
+            example: !include cart-get-response.json
+  /order:
+    post:
+      description: Order the cart
+      body:
+        application/json:
+          example: !include cart-order-request.json
+  /line-items:
+    post:
+      description: Add a product to the cart
+      body:
+        application/json:
+          schema: |
+            {
+              "type": "object",
+              "properties": {
+                "_type": {
+                  "description": "The type of the line item (always `PRODUCT` for product line items).",
+                  "type": "string",
+                  "required": true
+                },
+                "_ref": {
+                  "description": "The ID of the associated item (in case of `_type=PRODUCT` the product id).",
+                  "type": "string",
+                  "required": true
+                },
+                "quantityInt": {
+                  "description": "The value of the quantity.",
+                  "type": "number",
+                  "required": true
+                }
+              }
+            }
+          example: !include cart-add-line-item-request.json
+      responses:
+        200:
+          body:
+            application/hal+json:
+              example: !include cart-add-line-item-response.json
+  /line-items/{lineItemId}:
+    delete:
+      description: cart-delete-line-item
+      responses:
+        200:
+          body:
+            application/hal+json:
+              example: !include cart-delete-line-item-response.json

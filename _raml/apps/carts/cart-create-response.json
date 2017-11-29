@@ -1,0 +1,146 @@
+{
+  "lineItems" : [ ],
+  "shippingLineItem" : {
+    "lineItemPrice" : {
+      "taxModel" : "GROSS",
+      "currency" : "EUR",
+      "amount" : 16.95
+    },
+    "lineItemTaxes" : [ ],
+    "_embedded" : {
+      "shipping-method" : {
+        "name" : "Standard Shipping 1",
+        "description" : "Standard Shipping",
+        "taxClass" : "REGULAR",
+        "position" : 0,
+        "freeShippingValue" : null,
+        "fixedPrice" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : 16.95
+        },
+        "weightBasedPrice" : null,
+        "_id" : "3870fd4e-b790-4e76-ba26-f90ac6a56c13",
+        "_links" : {
+          "self" : {
+            "href" : "https://yourshop.api.urn/shipping-zones/fdc58ea2-199a-4579-a97c-e451735c5061/shipping-methods/3870fd4e-b790-4e76-ba26-f90ac6a56c13"
+          }
+        }
+      }
+    }
+  },
+  "paymentLineItem" : {
+    "lineItemPrice" : {
+      "taxModel" : "GROSS",
+      "currency" : "EUR",
+      "amount" : 2
+    },
+    "lineItemTaxes" : [ ],
+    "_embedded" : {
+      "payment-method" : {
+        "name" : "PayPal",
+        "description" : "Pay with PayPal",
+        "officialName" : "PayPal",
+        "officialDescription" : "Pay with PayPal",
+        "taxClass" : "REGULAR",
+        "discountOrFee" : {
+          "type" : "ABSOLUTE",
+          "absoluteValue" : {
+            "taxModel" : "GROSS",
+            "currency" : "EUR",
+            "amount" : 2
+          },
+          "percentageValue" : null
+        },
+        "position" : 1,
+        "serviceableCountries" : [ "DE" ],
+        "minimumOrderValue" : null,
+        "activated" : true,
+        "activeLogoSet" : null,
+        "onlinePayment" : false,
+        "activatable" : true,
+        "_id" : "c5382765-e48d-488f-b748-989b64debfdc",
+        "_links" : {
+          "self" : {
+            "href" : "https://yourshop.api.urn/payment-methods/c5382765-e48d-488f-b748-989b64debfdc"
+          },
+          "deactivate-payment-method" : {
+            "href" : "https://yourshop.api.urn/payment-methods/c5382765-e48d-488f-b748-989b64debfdc/deactivate"
+          }
+        }
+      }
+    }
+  },
+  "billingAddress" : null,
+  "shippingAddress" : null,
+  "subtotal" : {
+    "currency" : "EUR",
+    "amount" : 0
+  },
+  "grandTotal" : {
+    "currency" : "EUR",
+    "amount" : 18.95
+  },
+  "balanceDue" : {
+    "currency" : "EUR",
+    "amount" : 18.95
+  },
+  "netTotal" : {
+    "currency" : "EUR",
+    "amount" : 18.95
+  },
+  "taxTotal" : {
+    "currency" : "EUR",
+    "amount" : 0
+  },
+  "taxes" : [ ],
+  "taxable" : true,
+  "minimumOrderValue" : {
+    "currency" : "EUR",
+    "amount" : 0
+  },
+  "weight" : 0,
+  "checkoutState" : {
+    "shippingMethodValid" : true,
+    "shippingMethodSelectable" : true,
+    "paymentMethodValid" : true,
+    "paymentMethodSelectable" : true,
+    "billingAddressSet" : false,
+    "priceValidToOrder" : true,
+    "paymentTransactionStatus" : "NO_APPROVAL_NEEDED",
+    "readyToOrder" : false
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://yourshop.api.urn/carts/414e788d-725f-4ae1-87a1-d3098f85be71"
+    },
+    "line-items" : {
+      "href" : "https://yourshop.api.urn/carts/414e788d-725f-4ae1-87a1-d3098f85be71/line-items"
+    },
+    "shipping-method-available" : {
+      "href" : "https://yourshop.api.urn/carts/414e788d-725f-4ae1-87a1-d3098f85be71/shipping-methods"
+    },
+    "shipping-method-default" : {
+      "href" : "https://yourshop.api.urn/carts/414e788d-725f-4ae1-87a1-d3098f85be71/shipping-methods/default"
+    },
+    "shipping-method-current" : {
+      "href" : "https://yourshop.api.urn/carts/414e788d-725f-4ae1-87a1-d3098f85be71/shipping-methods/current"
+    },
+    "payment-method-available" : {
+      "href" : "https://yourshop.api.urn/carts/414e788d-725f-4ae1-87a1-d3098f85be71/payment-methods"
+    },
+    "payment-method-default" : {
+      "href" : "https://yourshop.api.urn/carts/414e788d-725f-4ae1-87a1-d3098f85be71/payment-methods/default"
+    },
+    "payment-method-current" : {
+      "href" : "https://yourshop.api.urn/carts/414e788d-725f-4ae1-87a1-d3098f85be71/payment-methods/current"
+    },
+    "billing-address" : {
+      "href" : "https://yourshop.api.urn/carts/414e788d-725f-4ae1-87a1-d3098f85be71/billing-address"
+    },
+    "shipping-address" : {
+      "href" : "https://yourshop.api.urn/carts/414e788d-725f-4ae1-87a1-d3098f85be71/shipping-address"
+    }
+  },
+  "_id" : "414e788d-725f-4ae1-87a1-d3098f85be71"
+}

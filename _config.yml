@@ -1,0 +1,23 @@
+# Site settings
+email: documentation@epages.com
+url: "https://developer.epages.com"
+encoding: utf-8
+baseurl: ""
+github_url: "https://github.com/ePages-de/epages-docs"
+
+raml:
+  - key_prefix: "apps-api-"
+    url_prefix: "apps/api-reference/"
+    root_file: "_raml/apps/api.raml"
+    api_versions: "_raml/**/*/api.raml"
+
+# Build settings
+markdown: kramdown
+exclude:
+  - circle.yml
+  - docker-compose.yml
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - vendor

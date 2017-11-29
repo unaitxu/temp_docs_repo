@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": {
+      "description": "The unique identifier of the cart.",
+      "type": "string",
+      "required": true
+    },
+    "billingAddress": {
+      "description": "The billing address of the cart. Refer to <<resources-cart-set-billing-address,Set cart billing address>> for item documentation.",
+      "type": "object",
+      "required": true
+    },
+    "shippingAddress": {
+      "description": "The shipping address that applies to the cart. Defaults to billing address if no shipping address is set. Refer to <<resources-cart-set-shipping-address,Set cart shipping address>> for item documentation.",
+      "type": "object",
+      "required": true
+    },
+    "grandTotal": {
+      "description": "The total price to be paid including product price, shipping, and tax.",
+      "type": "object",
+      "required": true
+    },
+    "subtotal": {
+      "description": "The subtotal of the product line items.",
+      "type": "object",
+      "required": true
+    },
+    "netTotal": {
+      "description": "The total net amount of the cart.",
+      "type": "object",
+      "required": true
+    },
+    "taxTotal": {
+      "description": "The total tax amount.",
+      "type": "object",
+      "required": true
+    },
+    "taxable": {
+      "description": "Indicates if a tax applies for the cart.",
+      "type": "boolean",
+      "required": true
+    },
+    "taxes": {
+      "description": "The tax amount per tax class.",
+      "type": "array",
+      "required": true
+    },
+    "balanceDue": {
+      "description": "The outstanding balance of the amount to be paid.",
+      "type": "object",
+      "required": true
+    },
+    "minimumOrderValue": {
+      "description": "The mininmum value of the cart so that this payment method can be used.",
+      "type": "object",
+      "required": true
+    },
+    "weight": {
+      "description": "The total weight of products in the cart. A product's weight defaults to 0 if not set.",
+      "type": "number",
+      "required": true
+    },
+    "_links": {
+      "description": "See <<hypermedia,Hypermedia>>",
+      "type": "object",
+      "required": true
+    }
+  }
+}

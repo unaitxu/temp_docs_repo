@@ -1,0 +1,208 @@
+{
+  "lineItems" : [ {
+    "_type" : "PRODUCT",
+    "_id" : "84d53834-0f7e-4a91-8a06-f566312b58ab",
+    "_ref" : "ca6ac286-d127-4ba2-a7fe-a38bfeeead14",
+    "name" : "Decorative Sand (2 kg Jumbo Pack)",
+    "quantity" : {
+      "value" : 1,
+      "unit" : "PIECE"
+    },
+    "singleItemPrice" : {
+      "taxModel" : "NET",
+      "currency" : "EUR",
+      "amount" : 42.0084
+    },
+    "lineItemPrice" : {
+      "taxModel" : "NET",
+      "currency" : "EUR",
+      "amount" : 42.0084
+    },
+    "_embedded" : {
+      "product" : {
+        "_id" : "ca6ac286-d127-4ba2-a7fe-a38bfeeead14",
+        "sku" : "1018",
+        "essentialFeatures" : "Not suitable for children under the age of 8.",
+        "_links" : {
+          "product" : {
+            "href" : "https://yourshop.api.urn/product-view/products/ca6ac286-d127-4ba2-a7fe-a38bfeeead14?locale=de-DE"
+          },
+          "default-image-data" : {
+            "href" : "https://yourshop.api.urn/storage/images/P7120104.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
+            "templated" : true
+          }
+        }
+      }
+    },
+    "quantityInt" : 1,
+    "lineItemTax" : {
+      "taxClass" : "REGULAR",
+      "taxRate" : 0.19,
+      "currency" : "EUR",
+      "amount" : 7.981596
+    },
+    "_links" : {
+      "self" : {
+        "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39/line-items/84d53834-0f7e-4a91-8a06-f566312b58ab"
+      }
+    }
+  } ],
+  "shippingLineItem" : {
+    "lineItemPrice" : {
+      "taxModel" : "GROSS",
+      "currency" : "EUR",
+      "amount" : 16.95
+    },
+    "lineItemTaxes" : [ {
+      "taxClass" : "REGULAR",
+      "taxRate" : 0.0,
+      "currency" : "EUR",
+      "amount" : 0
+    } ],
+    "_embedded" : {
+      "shipping-method" : {
+        "name" : "Standard Shipping 1",
+        "description" : "Standard Shipping",
+        "taxClass" : "REGULAR",
+        "position" : 0,
+        "freeShippingValue" : null,
+        "fixedPrice" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : 16.95
+        },
+        "weightBasedPrice" : null,
+        "_id" : "72993e14-9901-4a27-be5e-53466646f864",
+        "_links" : {
+          "self" : {
+            "href" : "https://yourshop.api.urn/shipping-zones/04834a4f-e7f1-4f30-8800-407fdf40c42e/shipping-methods/72993e14-9901-4a27-be5e-53466646f864"
+          }
+        }
+      }
+    }
+  },
+  "paymentLineItem" : {
+    "lineItemPrice" : {
+      "taxModel" : "GROSS",
+      "currency" : "EUR",
+      "amount" : 2
+    },
+    "lineItemTaxes" : [ {
+      "taxClass" : "REGULAR",
+      "taxRate" : 0.0,
+      "currency" : "EUR",
+      "amount" : 0
+    } ],
+    "_embedded" : {
+      "payment-method" : {
+        "name" : "PayPal",
+        "description" : "Pay with PayPal",
+        "officialName" : "PayPal",
+        "officialDescription" : "Pay with PayPal",
+        "taxClass" : "REGULAR",
+        "discountOrFee" : {
+          "type" : "ABSOLUTE",
+          "absoluteValue" : {
+            "taxModel" : "GROSS",
+            "currency" : "EUR",
+            "amount" : 2
+          },
+          "percentageValue" : null
+        },
+        "position" : 1,
+        "serviceableCountries" : [ "DE" ],
+        "minimumOrderValue" : null,
+        "activated" : true,
+        "activeLogoSet" : null,
+        "onlinePayment" : false,
+        "activatable" : true,
+        "_id" : "5f47b9aa-b585-4cee-95f1-703754bb7dbc",
+        "_links" : {
+          "self" : {
+            "href" : "https://yourshop.api.urn/payment-methods/5f47b9aa-b585-4cee-95f1-703754bb7dbc"
+          },
+          "deactivate-payment-method" : {
+            "href" : "https://yourshop.api.urn/payment-methods/5f47b9aa-b585-4cee-95f1-703754bb7dbc/deactivate"
+          }
+        }
+      }
+    }
+  },
+  "billingAddress" : null,
+  "shippingAddress" : null,
+  "subtotal" : {
+    "currency" : "EUR",
+    "amount" : 42.0084
+  },
+  "grandTotal" : {
+    "currency" : "EUR",
+    "amount" : 60.9584
+  },
+  "balanceDue" : {
+    "currency" : "EUR",
+    "amount" : 60.9584
+  },
+  "netTotal" : {
+    "currency" : "EUR",
+    "amount" : 60.9584
+  },
+  "taxTotal" : {
+    "currency" : "EUR",
+    "amount" : 0
+  },
+  "taxes" : [ {
+    "taxClass" : "REGULAR",
+    "taxRate" : 0.0,
+    "currency" : "EUR",
+    "amount" : 0
+  } ],
+  "taxable" : true,
+  "minimumOrderValue" : {
+    "currency" : "EUR",
+    "amount" : 0
+  },
+  "weight" : 2000,
+  "checkoutState" : {
+    "shippingMethodValid" : true,
+    "shippingMethodSelectable" : true,
+    "paymentMethodValid" : true,
+    "paymentMethodSelectable" : true,
+    "billingAddressSet" : false,
+    "priceValidToOrder" : true,
+    "paymentTransactionStatus" : "NO_APPROVAL_NEEDED",
+    "readyToOrder" : false
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39"
+    },
+    "line-items" : {
+      "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39/line-items"
+    },
+    "shipping-method-available" : {
+      "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39/shipping-methods"
+    },
+    "shipping-method-default" : {
+      "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39/shipping-methods/default"
+    },
+    "shipping-method-current" : {
+      "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39/shipping-methods/current"
+    },
+    "payment-method-available" : {
+      "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39/payment-methods"
+    },
+    "payment-method-default" : {
+      "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39/payment-methods/default"
+    },
+    "payment-method-current" : {
+      "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39/payment-methods/current"
+    },
+    "billing-address" : {
+      "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39/billing-address"
+    },
+    "shipping-address" : {
+      "href" : "https://yourshop.api.urn/carts/d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39/shipping-address"
+    }
+  },
+  "_id" : "d082b1b7-d3ce-4e6e-b1cd-e26cadc24b39"
+}

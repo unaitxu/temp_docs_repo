@@ -1,0 +1,258 @@
+{
+  "lineItems" : [ {
+    "_type" : "PRODUCT",
+    "_id" : "294b7f1f-fbcb-4c80-8259-9472968fff9b",
+    "_ref" : "3fe090e9-814b-4750-9a88-10f94969fba0",
+    "name" : "Decorative Sand (2 kg Jumbo Pack)",
+    "quantity" : {
+      "value" : 1,
+      "unit" : "PIECE"
+    },
+    "singleItemPrice" : {
+      "taxModel" : "NET",
+      "currency" : "EUR",
+      "amount" : 42.0084
+    },
+    "lineItemPrice" : {
+      "taxModel" : "NET",
+      "currency" : "EUR",
+      "amount" : 42.0084
+    },
+    "_embedded" : {
+      "product" : {
+        "_id" : "3fe090e9-814b-4750-9a88-10f94969fba0",
+        "sku" : "1018",
+        "essentialFeatures" : "Not suitable for children under the age of 8.",
+        "_links" : {
+          "product" : {
+            "href" : "https://yourshop.api.urn/product-view/products/3fe090e9-814b-4750-9a88-10f94969fba0?locale=de-DE"
+          },
+          "default-image-data" : {
+            "href" : "https://yourshop.api.urn/storage/images/P7120104.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
+            "templated" : true
+          }
+        }
+      }
+    },
+    "quantityInt" : 1,
+    "lineItemTax" : {
+      "taxClass" : "REGULAR",
+      "taxRate" : 0.19,
+      "currency" : "EUR",
+      "amount" : 7.9816
+    },
+    "_links" : {
+      "self" : {
+        "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/line-items/294b7f1f-fbcb-4c80-8259-9472968fff9b"
+      }
+    }
+  } ],
+  "shippingLineItem" : {
+    "lineItemPrice" : {
+      "taxModel" : "GROSS",
+      "currency" : "EUR",
+      "amount" : 50
+    },
+    "lineItemTaxes" : [ {
+      "taxClass" : "REGULAR",
+      "taxRate" : 0.0,
+      "currency" : "EUR",
+      "amount" : 0
+    } ],
+    "_embedded" : {
+      "shipping-method" : {
+        "name" : "Express",
+        "description" : "Shipping overnight, delivery on the next day.",
+        "taxClass" : "REGULAR",
+        "position" : 0,
+        "freeShippingValue" : {
+          "currency" : "EUR",
+          "amount" : 1000
+        },
+        "fixedPrice" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : 50
+        },
+        "weightBasedPrice" : null,
+        "_id" : "ca695549-5655-4f7b-9bba-5cef7db0f76a",
+        "_links" : {
+          "self" : {
+            "href" : "https://yourshop.api.urn/shipping-zones/47230a8e-def3-46ad-8c99-3faed8d4bd4b/shipping-methods/ca695549-5655-4f7b-9bba-5cef7db0f76a"
+          }
+        }
+      }
+    }
+  },
+  "paymentLineItem" : {
+    "lineItemPrice" : {
+      "taxModel" : "GROSS",
+      "currency" : "EUR",
+      "amount" : 2
+    },
+    "lineItemTaxes" : [ {
+      "taxClass" : "REGULAR",
+      "taxRate" : 0.0,
+      "currency" : "EUR",
+      "amount" : 0
+    } ],
+    "_embedded" : {
+      "payment-method" : {
+        "name" : "PayPal",
+        "description" : "Pay with PayPal",
+        "officialName" : "PayPal",
+        "officialDescription" : "Pay with PayPal",
+        "taxClass" : "REGULAR",
+        "discountOrFee" : {
+          "type" : "ABSOLUTE",
+          "absoluteValue" : {
+            "taxModel" : "GROSS",
+            "currency" : "EUR",
+            "amount" : 2
+          },
+          "percentageValue" : null
+        },
+        "position" : 1,
+        "serviceableCountries" : [ "DE" ],
+        "minimumOrderValue" : null,
+        "activated" : true,
+        "activeLogoSet" : null,
+        "onlinePayment" : false,
+        "activatable" : true,
+        "_id" : "89f847d0-e5f0-4d6e-82ff-58a27d8b6e55",
+        "_links" : {
+          "self" : {
+            "href" : "https://yourshop.api.urn/payment-methods/89f847d0-e5f0-4d6e-82ff-58a27d8b6e55"
+          },
+          "deactivate-payment-method" : {
+            "href" : "https://yourshop.api.urn/payment-methods/89f847d0-e5f0-4d6e-82ff-58a27d8b6e55/deactivate"
+          }
+        }
+      }
+    }
+  },
+  "billingAddress" : {
+    "salutation" : "Mrs",
+    "gender" : "FEMALE",
+    "company" : null,
+    "title" : "",
+    "firstName" : "Astrid",
+    "middleName" : "Agnes",
+    "lastName" : "Alster",
+    "street" : "Alsterwasserweg",
+    "houseNumber" : "2",
+    "street2" : "Erdgeschoss",
+    "addressExtension" : "",
+    "postalCode" : "20999",
+    "city" : "Alsterwasser",
+    "country" : "DE",
+    "state" : "Hamburg",
+    "email" : "a.alsterh@example.com",
+    "phone" : "(800) 555-0102",
+    "mobile" : "(800) 555-0103",
+    "displayAddressLines" : [ "Astrid Agnes Alster", "Alsterwasserweg 2", "Erdgeschoss", "20999 Alsterwasser" ],
+    "vatId" : "123456789",
+    "taxNumber" : "123-34-6789",
+    "birthDate" : "1985-03-20"
+  },
+  "shippingAddress" : {
+    "salutation" : "Mrs",
+    "gender" : "FEMALE",
+    "company" : null,
+    "title" : "",
+    "firstName" : "Astrid",
+    "middleName" : "Agnes",
+    "lastName" : "Alster",
+    "street" : "Alsterwasserweg",
+    "houseNumber" : "2",
+    "street2" : "Erdgeschoss",
+    "addressExtension" : "",
+    "postalCode" : "20999",
+    "city" : "Alsterwasser",
+    "country" : "DE",
+    "state" : "Hamburg",
+    "email" : "a.alsterh@example.com",
+    "phone" : "(800) 555-0102",
+    "mobile" : "(800) 555-0103",
+    "displayAddressLines" : [ "Astrid Agnes Alster", "Alsterwasserweg 2", "Erdgeschoss", "20999 Alsterwasser" ],
+    "doorCode" : "0815"
+  },
+  "subtotal" : {
+    "currency" : "EUR",
+    "amount" : 42.0084
+  },
+  "grandTotal" : {
+    "currency" : "EUR",
+    "amount" : 94.0084
+  },
+  "balanceDue" : {
+    "currency" : "EUR",
+    "amount" : 94.0084
+  },
+  "netTotal" : {
+    "currency" : "EUR",
+    "amount" : 94.0084
+  },
+  "taxTotal" : {
+    "currency" : "EUR",
+    "amount" : 0
+  },
+  "taxes" : [ {
+    "taxClass" : "REGULAR",
+    "taxRate" : 0.0,
+    "currency" : "EUR",
+    "amount" : 0
+  } ],
+  "taxable" : true,
+  "minimumOrderValue" : {
+    "currency" : "EUR",
+    "amount" : 0
+  },
+  "weight" : 2000,
+  "checkoutState" : {
+    "shippingMethodValid" : true,
+    "shippingMethodSelectable" : true,
+    "paymentMethodValid" : true,
+    "paymentMethodSelectable" : true,
+    "billingAddressSet" : true,
+    "priceValidToOrder" : true,
+    "paymentTransactionStatus" : "NO_APPROVAL_NEEDED",
+    "readyToOrder" : true
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f"
+    },
+    "line-items" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/line-items"
+    },
+    "shipping-method-available" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/shipping-methods"
+    },
+    "shipping-method-default" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/shipping-methods/default"
+    },
+    "shipping-method-current" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/shipping-methods/current"
+    },
+    "payment-method-available" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/payment-methods"
+    },
+    "payment-method-default" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/payment-methods/default"
+    },
+    "payment-method-current" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/payment-methods/current"
+    },
+    "billing-address" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/billing-address"
+    },
+    "shipping-address" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/shipping-address"
+    },
+    "place-order" : {
+      "href" : "https://yourshop.api.urn/carts/b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f/order"
+    }
+  },
+  "_id" : "b8e6bb5f-4bc0-4c83-93fb-2e405b23e40f"
+}
